@@ -1,14 +1,11 @@
 # Copyright 2019-2022 Therp BV <https://therp.nl>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
-from odoo import _, api, fields, models, exceptions
+from odoo import fields, models
 
 
 class ProductPricelistItem(models.Model):
     _inherit = "product.pricelist.item"
-    _order = "sequence, applied_on, min_quantity desc, categ_id desc, id desc"
-    # NOTE: if you change _order on this model, make sure it matches the SQL
-    # query built in _compute_price_rule() above in this file to avoid
-    # inconstencies and undeterministic issues.
+    # NOTE: we do not change _order, we ar jest adding sequence 
+    # and visualizing a different order in view.
 
-    sequence = fields.Integer(default=16)
-
+    ppi_sequence = fields.Integer(default=16)
