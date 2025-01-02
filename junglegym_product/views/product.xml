@@ -17,7 +17,7 @@
             <xpath
                 expr="//field[@name='item_ids']/tree/field[@name='name']"
                 position="before"
-                >
+            >
                   <field name="ppi_sequence" widget="handle" />
             </xpath>
             <xpath expr="//field[@name='item_ids']/tree" position="attributes">
