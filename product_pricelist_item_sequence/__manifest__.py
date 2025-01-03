@@ -10,9 +10,10 @@
     "summary": "Sequence field for pricelist items",
     "depends": [
         "product",
+        "product_pricelist_item_list_view",
     ],
     "data": [
-        "views/product.xml",
+        "views/product_views.xml",
     ],
     "installable": True,
     "application": False,
