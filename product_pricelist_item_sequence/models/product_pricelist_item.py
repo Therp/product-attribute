@@ -8,4 +8,4 @@ class ProductPricelistItem(models.Model):
     # NOTE: we do not change _order, we are just adding sequence
     # and visualizing a different order in view.
 
-    ppi_sequence = fields.Integer(default=16)
+    sequence = fields.Integer(default=16)
