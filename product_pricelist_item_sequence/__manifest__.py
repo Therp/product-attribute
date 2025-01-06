@@ -8,10 +8,7 @@
     "category": "Sales/Sales",
     "website": "https://github.com/OCA/product-attribute",
     "summary": "Sequence field for pricelist items",
-    "depends": [
-        "product",
-        "product_pricelist_item_list_view",
-    ],
+    "depends": ["product"],
     "data": [
         "views/product_views.xml",
     ],
